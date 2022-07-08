@@ -4,8 +4,8 @@ head(zomato , n = 17)
 typeof(zomato)
 glimpse(zomato)
 status(zomato)
-p_na(zomato) 
-colnames(zomato)[colnames(zomato )== "approx_cost(for two people)"] = "cost_2"
+
+zomato =  rename(zomato , "cost_2" = 13)
 colnames(zomato)[colnames(zomato )== "rate"] = "rating"
 library(dplyr)
 zomato =  rename(zomato , "type" = 16)

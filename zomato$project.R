@@ -13,6 +13,7 @@ zomato = rename(zomato , "city" = 17)
 as.character(zomato$cost_2)
 typeof(zomato$cost_2)
 unique(zomato$rating)
+## removing "/5" from "rating"
 zomato$rating = gsub("/5" , "" , zomato$rating)
 ## visualising
 ###most famous rest chain
